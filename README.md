@@ -32,13 +32,18 @@ Use scripts 01–15 to:
 2) Genome and transcriptome assembly using FLYE, HIFIASM, LJA and Trinity
 3) Assess assembly quality and comparison of genomes using BUSCO, QUAST, MERQURY and MUMmmer 
 
-### Annotate the genome by mapping the transcriptome assembly data to genome assembly 
+### Annotation of transposable elements (TEs)
 
-Use scripts 16–50 to:
+Use scripts 16–31 to:
 
 1) Annotation of transposable elements (TEs) using EDTA, TE divergence and phylogenetic tree analysis
-2) Gene annotation with the MAKER pipeline 
-3) Quality assessment of gene using BUSCO, OMArk (HOGs identification), and refinement with MiniProt 
-4) Comparative genomics using GENESPACE
+
+### Annotate the genome by mapping the transcriptome assembly data to genome assembly 
+
+Use scripts 32–50 to:
+
+1) Gene annotation with the MAKER pipeline 
+2) Quality assessment of gene using BUSCO, OMArk (HOGs identification), and refinement with MiniProt 
+3) Comparative genomics using GENESPACE
 
 Additional annotation statistics are extracted using metrics_annotation.sh

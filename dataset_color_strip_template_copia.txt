@@ -1,0 +1,584 @@
+DATASET_COLORSTRIP
+#In colored strip datasets, each ID is associated to a color box/strip and can have an optional label. Color can be specified in hexadecimal, RGB or RGBA notation. When using RGB or RGBA notation, you cannot use COMMA as the dataset separator
+
+#lines starting with a hash are comments and ignored during parsing
+
+#=================================================================#
+#                    MANDATORY SETTINGS                           #
+#=================================================================#
+#select the separator which is used to delimit the data below (TAB,SPACE or COMMA).This separator must be used throughout this file.
+
+#SEPARATOR TAB
+#SEPARATOR COMMA
+SEPARATOR SPACE
+
+#label is used in the legend table (can be changed later)
+DATASET_LABEL label1 label2
+
+#dataset color (can be changed later)
+COLOR #ff0000
+
+#=================================================================#
+#                    OPTIONAL SETTINGS                            #
+#=================================================================#
+
+#If COLOR_BRANCHES is set to 1, branches of the tree will be colored according to the colors of the strips above the leaves.
+#When all children of a node have the same color, it will be colored the same, ie. the color will propagate inwards towards the root.
+COLOR_BRANCHES 1
+
+
+#=================================================================#
+#     all other optional settings can be set or changed later     #
+#           in the web interface (under 'Datasets' tab)           #
+#=================================================================#
+
+#Each dataset can have a legend, which is defined using LEGEND_XXX fields below
+#For each row in the legend, there should be one shape, color and label.
+#Optionally, you can define an exact legend position using LEGEND_POSITION_X and LEGEND_POSITION_Y. To use automatic legend positioning, do NOT define these values
+#Optionally, shape scaling can be present (LEGEND_SHAPE_SCALES). For each shape, you can define a scaling factor between 0 and 1.
+#To order legend entries horizontally instead of vertically, set LEGEND_HORIZONTAL to 1
+#Shape should be a number between 1 and 6, or any protein domain shape definition.
+#1: square
+#2: circle
+#3: star
+#4: right pointing triangle
+#5: left pointing triangle
+#6: checkmark
+
+#LEGEND_TITLE Dataset_legend
+#LEGEND_SCALE 1
+#LEGEND_POSITION_X 100
+#LEGEND_POSITION_Y 100
+#LEGEND_HORIZONTAL 0
+#LEGEND_SHAPES 1 1 2 2
+#LEGEND_COLORS #ff0000 #00ff00 rgba(0,255,0,0.5) #0000ff
+#LEGEND_LABELS value1 value2 value3 value4
+#LEGEND_SHAPE_SCALES 1 1 0.5 1
+
+#width of the colored strip
+#STRIP_WIDTH 25
+
+#left margin, used to increase/decrease the spacing to the next dataset. Can be negative, causing datasets to overlap.
+#MARGIN 0
+
+#border width; if set above 0, a border of specified width (in pixels) will be drawn around the color strip 
+#BORDER_WIDTH 0
+
+#border color; used when BORDER_WIDTH is above 0
+#BORDER_COLOR #0000ff
+
+#if set to 1, border will be drawn completely around each colored strip box
+#COMPLETE_BORDER 0
+
+#always show internal values; if set, values associated to internal nodes will be displayed even if these nodes are not collapsed. It could cause overlapping in the dataset display.
+#SHOW_INTERNAL 0
+
+
+#display or hide the individual label inside each colored strip (when defined in the data below)
+#SHOW_STRIP_LABELS 1
+
+#position of the strip label within the box; 'top', 'center' or 'bottom'
+#STRIP_LABEL_POSITION center
+
+#strip label size factor (relative to the tree leaf labels)
+#STRIP_LABEL_SIZE_FACTOR 1
+
+
+#rotation of the strip labels; used only in rectangular tree display mode
+#STRIP_LABEL_ROTATION 0
+
+#strip label shift in pixels (positive or negative)
+#STRIP_LABEL_SHIFT 0
+
+#STRIP_LABEL_COLOR #000000
+
+#draw a black outline around the text (width in pixels)
+#STRIP_LABEL_OUTLINE 0.5
+
+#calculate the label color automatically (black or white), based on the darkness of the color strip
+#STRIP_LABEL_AUTO_COLOR 0
+
+#display or hide the dataset label above the colored strip
+#SHOW_LABELS 1
+
+#dataset label size factor
+#SIZE_FACTOR 1
+
+#dataset label rotation
+#LABEL_ROTATION 0
+
+#dataset label shift in pixels (positive or negative)
+#LABEL_SHIFT 0
+
+#Internal tree nodes can be specified using IDs directly, or using the 'last common ancestor' method described in iTOL help pages
+
+#=================================================================#
+#       Actual data follows after the "DATA" keyword              #
+#=================================================================#
+DATA
+# TE_family hex_color_code Clade
+TE_00000284_INT #7F00FF Tork
+TE_00000285_INT #3357FF Ale
+TE_00000286_INT #3357FF Ale
+TE_00000291_INT #F3FF33 Ikeros
+TE_00000294_INT #FF33F3 Angela
+TE_00000298_INT #3357FF Ale
+TE_00000315_INT #33FFF3 TAR
+TE_00000335_INT #3357FF Ale
+TE_00000344_INT #7F00FF Tork
+TE_00000356_INT #3357FF Ale
+TE_00000360_INT #3357FF Ale
+TE_00000364_INT #FF8C00 Ivana
+TE_00000376_INT #3357FF Ale
+TE_00000387_INT #FF8C00 Ivana
+TE_00000394_INT #7F00FF Tork
+TE_00000397_INT #3357FF Ale
+TE_00000398_INT #7F00FF Tork
+TE_00000402_INT #3357FF Ale
+TE_00000405_INT #3357FF Ale
+TE_00000416_INT #7F00FF Tork
+TE_00000432_INT #3357FF Ale
+TE_00000441_INT #2e9e75 Alesia
+TE_00000450_INT #3357FF Ale
+TE_00000464_INT #FF8C00 Ivana
+TE_00000476_INT #3357FF Ale
+TE_00000479_INT #3357FF Ale
+TE_00000492_INT #FF8C00 Ivana
+TE_00000495_INT #3357FF Ale
+TE_00000496_INT #3357FF Ale
+TE_00000507_INT #3357FF Ale
+TE_00000508_INT #3357FF Ale
+TE_00000516_INT #FF8C00 Ivana
+TE_00000522_INT #7F00FF Tork
+TE_00000525_INT #3357FF Ale
+TE_00000534_INT #008BFF SIRE
+TE_00000535_INT #3357FF Ale
+TE_00000544_INT #3357FF Ale
+TE_00000550_INT #3357FF Ale
+TE_00000552_INT #FF8C00 Ivana
+TE_00000565_INT #008BFF SIRE
+TE_00000568_INT #7F00FF Tork
+TE_00000575_INT #3357FF Ale
+TE_00000578_INT #3357FF Ale
+TE_00000579_INT #3357FF Ale
+TE_00000587_INT #3357FF Ale
+TE_00000592_INT #3357FF Ale
+TE_00000596_INT #3357FF Ale
+TE_00000600_INT #008BFF SIRE
+TE_00000607_INT #BFFF00 Bianca
+TE_00000611_INT #7F00FF Tork
+TE_00000613_INT #7F00FF Tork
+TE_00000617_INT #7F00FF Tork
+TE_00000619_INT #FF8C00 Ivana
+TE_00000622_INT #FF33F3 Angela
+TE_00000633_INT #3357FF Ale
+TE_00000635_INT #FF8C00 Ivana
+TE_00000641_INT #3357FF Ale
+TE_00000656_INT #3357FF Ale
+TE_00000688_INT #3357FF Ale
+TE_00000693_INT #FF8C00 Ivana
+TE_00000701_INT #7F00FF Tork
+TE_00000705_INT #008BFF SIRE
+TE_00000708_INT #3357FF Ale
+TE_00000740_INT #3357FF Ale
+TE_00000749_INT #3357FF Ale
+TE_00000752_INT #008BFF SIRE
+TE_00000756_INT #3357FF Ale
+TE_00000757_INT #FF8C00 Ivana
+TE_00000759_INT #3357FF Ale
+TE_00000760_INT #3357FF Ale
+TE_00000770_INT #3357FF Ale
+TE_00000772_INT #3357FF Ale
+TE_00000774_INT #BFFF00 Bianca
+TE_00000776_INT #3357FF Ale
+TE_00000779_INT #3357FF Ale
+TE_00000784_INT #7F00FF Tork
+TE_00000795_INT #3357FF Ale
+TE_00000796_INT #BFFF00 Bianca
+TE_00000800_INT #3357FF Ale
+TE_00000802_INT #3357FF Ale
+TE_00000825_INT #7F00FF Tork
+TE_00000826_INT #7F00FF Tork
+TE_00000829_INT #3357FF Ale
+TE_00000843_INT #3357FF Ale
+TE_00000844_INT #3357FF Ale
+TE_00000862_INT #3357FF Ale
+ATCOPI1_I #3357FF Ale
+ATCOPIA10_I #7F00FF Tork
+ATCOPIA11I #3357FF Ale
+ATCOPIA12I #3357FF Ale
+ATCOPIA13I #3357FF Ale
+ATCOPIA14I #3357FF Ale
+ATCOPIA15I #3357FF Ale
+ATCOPIA16I #3357FF Ale
+ATCOPIA17I #3357FF Ale
+ATCOPIA18A_I #3357FF Ale
+ATCOPIA18I #3357FF Ale
+ATCOPIA19I #3357FF Ale
+ATCOPIA1I #3357FF Ale
+ATCOPIA20I #3357FF Ale
+ATCOPIA21I #3357FF Ale
+ATCOPIA22I #3357FF Ale
+ATCOPIA23_I #FF8C00 Ivana
+ATCOPIA24I #3357FF Ale
+ATCOPIA25I #3357FF Ale
+ATCOPIA26I #3357FF Ale
+ATCOPIA27_I #BFFF00 Bianca
+ATCOPIA28_I #BFFF00 Bianca
+ATCOPIA29_I #BFFF00 Bianca
+ATCOPIA2I #3357FF Ale
+ATCOPIA30_I #BFFF00 Bianca
+ATCOPIA31A_I #FF8C00 Ivana
+ATCOPIA31_I #FF8C00 Ivana
+ATCOPIA32B_I #7F00FF Tork
+ATCOPIA32_I #7F00FF Tork
+ATCOPIA33_I #7F00FF Tork
+ATCOPIA34_I #7F00FF Tork
+ATCOPIA35_I #FF8C00 Ivana
+ATCOPIA36_I #FF8C00 Ivana
+ATCOPIA37_I #7F00FF Tork
+ATCOPIA38A_I #3357FF Ale
+ATCOPIA38B_I #3357FF Ale
+ATCOPIA38_I #3357FF Ale
+ATCOPIA39_I #FF8C00 Ivana
+ATCOPIA3I #3357FF Ale
+ATCOPIA40_I #FF8C00 Ivana
+ATCOPIA41I #008BFF SIRE
+ATCOPIA42I #008BFF SIRE
+ATCOPIA43I #008BFF SIRE
+ATCOPIA44_I #7F00FF Tork
+ATCOPIA45_I #FF8C00 Ivana
+ATCOPIA46_I #3357FF Ale
+ATCOPIA47_I #3357FF Ale
+ATCOPIA48_I #3357FF Ale
+ATCOPIA49_I #7F00FF Tork
+ATCOPIA4I #3357FF Ale
+ATCOPIA50_I #7F00FF Tork
+ATCOPIA51_I #3357FF Ale
+ATCOPIA52_I #3357FF Ale
+ATCOPIA53_I #3357FF Ale
+ATCOPIA54_I #FF8C00 Ivana
+ATCOPIA55_I #3357FF Ale
+ATCOPIA56_I #7F00FF Tork
+ATCOPIA57_I #FF8C00 Ivana
+ATCOPIA58_I #008BFF SIRE
+ATCOPIA59_I #7F00FF Tork
+ATCOPIA5I #3357FF Ale
+ATCOPIA60_I #3357FF Ale
+ATCOPIA61_I #3357FF Ale
+ATCOPIA62_I #3357FF Ale
+ATCOPIA63_I #FF8C00 Ivana
+ATCOPIA64_I #FF8C00 Ivana
+ATCOPIA65A_I #FF8C00 Ivana
+ATCOPIA65_I #FF8C00 Ivana
+ATCOPIA66_I #7F00FF Tork
+ATCOPIA67_I #3357FF Ale
+ATCOPIA68_I #7F00FF Tork
+ATCOPIA69A_I #7F00FF Tork
+ATCOPIA69_I #7F00FF Tork
+ATCOPIA6I #3357FF Ale
+ATCOPIA70_I #3357FF Ale
+ATCOPIA71_I #3357FF Ale
+ATCOPIA72_I #3357FF Ale
+ATCOPIA73_I #3357FF Ale
+ATCOPIA74_I #7F00FF Tork
+ATCOPIA75_I #3357FF Ale
+ATCOPIA76_I #7F00FF Tork
+ATCOPIA77_I #3357FF Ale
+ATCOPIA78_I #FF8C00 Ivana
+ATCOPIA79_I #3357FF Ale
+ATCOPIA7I #3357FF Ale
+ATCOPIA80_I #3357FF Ale
+ATCOPIA81_I #3357FF Ale
+ATCOPIA82_I #3357FF Ale
+ATCOPIA83_I #3357FF Ale
+ATCOPIA84_I #3357FF Ale
+ATCOPIA85_I #3357FF Ale
+ATCOPIA86_I #3357FF Ale
+ATCOPIA87_I #7F00FF Tork
+ATCOPIA88_I #3357FF Ale
+ATCOPIA89_I #3357FF Ale
+ATCOPIA8AI #3357FF Ale
+ATCOPIA8BI #3357FF Ale
+ATCOPIA90_I #3357FF Ale
+ATCOPIA91_I #3357FF Ale
+ATCOPIA92_I #3357FF Ale
+ATCOPIA93_I #3357FF Ale
+ATCOPIA94_I #3357FF Ale
+ATCOPIA95_I #33FFF3 TAR
+ATCOPIA96_I #3357FF Ale
+ATCOPIA97I #FF8C00 Ivana
+ATCOPIA9I #3357FF Ale
+ATRE1_I #3357FF Ale
+CASTOR_I #3357FF Ale
+Copia-100_BRa-I #7F00FF Tork
+Copia-101_BRa-I #3357FF Ale
+Copia-102_BRa-I #FF8C00 Ivana
+Copia-103_BRa-I #FF8C00 Ivana
+Copia-104_BRa-I #3357FF Ale
+Copia-105_BRa-I #7F00FF Tork
+Copia-106_BRa-I #3357FF Ale
+Copia-107_BRa-I #FF8C00 Ivana
+Copia-108_BRa-I #FF8C00 Ivana
+Copia-109_BRa-I #BFFF00 Bianca
+Copia-10_ALY-I #3357FF Ale
+Copia-10_BRa-I #3357FF Ale
+Copia-10_EPa-I #FF8C00 Ivana
+Copia-110_BRa-I #3357FF Ale
+Copia-111_BRa-I #3357FF Ale
+Copia-111_BRa-LTR #3357FF Ale
+Copia-112_BRa-I #008BFF SIRE
+Copia-113_BRa-I #3357FF Ale
+Copia-114_BRa-I #3357FF Ale
+Copia-115_BRa-I #FF8C00 Ivana
+Copia-116_BRa-I #3357FF Ale
+Copia-117_BRa-I #FF8C00 Ivana
+Copia-118_BRa-I #3357FF Ale
+Copia-119_BRa-I #3357FF Ale
+Copia-11_ALY-I #008BFF SIRE
+Copia-11_BRa-I #FF8C00 Ivana
+Copia-11_EPa-I #FF8C00 Ivana
+Copia-120_BRa-I #3357FF Ale
+Copia-121_BRa-I #3357FF Ale
+Copia-122_BRa-I #3357FF Ale
+Copia-123_BRa-I #3357FF Ale
+Copia-124_BRa-I #FF8C00 Ivana
+Copia-125_BRa-I #FF8C00 Ivana
+Copia-126_BRa-I #FF8C00 Ivana
+Copia-127_BRa-I #3357FF Ale
+Copia-128_BRa-I #FF8C00 Ivana
+Copia-129_BRa-I #3357FF Ale
+Copia-12_ALY-I #FF8C00 Ivana
+Copia-12_BRa-I #FF8C00 Ivana
+Copia-12_EPa-I #3357FF Ale
+Copia-130_BRa-I #F3FF33 Ikeros
+Copia-131_BRa-I #3357FF Ale
+Copia-132_BRa-I #FF8C00 Ivana
+Copia-133_BRa-I #3357FF Ale
+Copia-134_BRa-I #7F00FF Tork
+Copia-135_ALy-I #FF8C00 Ivana
+Copia-135_BRa-I #7F00FF Tork
+Copia-136_BRa-I #FF8C00 Ivana
+Copia-137_ALy-I #3357FF Ale
+Copia-13_ALY-I #FF8C00 Ivana
+Copia-13_BRa-I #FF8C00 Ivana
+Copia-13_EPa-I #3357FF Ale
+Copia-140_ALy-I #F3FF33 Ikeros
+Copia-141_ALy-I #FF8C00 Ivana
+Copia-142B_ALy-I #FF8C00 Ivana
+Copia-142_ALy-I #FF8C00 Ivana
+Copia-143_ALy-I #FF8C00 Ivana
+Copia-14_ALY-I #3357FF Ale
+Copia-14_BRa-I #FF8C00 Ivana
+Copia-14_EPa-I #7F00FF Tork
+Copia-15_ALY-I #3357FF Ale
+Copia-15_BRa-I #7F00FF Tork
+Copia-15_EPa-I #3357FF Ale
+Copia-16_ALY-I #FF8C00 Ivana
+Copia-16_BRa-I #3357FF Ale
+Copia-16_EPa-I #7F00FF Tork
+Copia-17_ALY-I #3357FF Ale
+Copia-17_BRa-I #3357FF Ale
+Copia-17_EPa-I #3357FF Ale
+Copia-18_ALY-I #3357FF Ale
+Copia-18_BRa-I #3357FF Ale
+Copia-18_EPa-I #FF8C00 Ivana
+Copia-19_ALY-I #3357FF Ale
+Copia-19_BRa-I #FF8C00 Ivana
+Copia-19_EPa-I #7F00FF Tork
+Copia-1_ALY-I #3357FF Ale
+Copia-1_AT-I #3357FF Ale
+Copia-1_BRa-I #3357FF Ale
+Copia-1_EPa-I #3357FF Ale
+Copia-20_ALY-I #FF8C00 Ivana
+Copia-20_BRa-I #FF8C00 Ivana
+Copia-20_EPa-I #FF8C00 Ivana
+Copia-21_ALY-I #FF8C00 Ivana
+Copia-21_BRa-I #FF8C00 Ivana
+Copia-21_EPa-I #3357FF Ale
+Copia-22_ALY-I #FF8C00 Ivana
+Copia-22_BRa-I #3357FF Ale
+Copia-23_ALY-I #3357FF Ale
+Copia-23_BRa-I #3357FF Ale
+Copia-24_ALY-I #3357FF Ale
+Copia-24_BRa-I #7F00FF Tork
+Copia-25_ALY-I #3357FF Ale
+Copia-25_BRa-I #3357FF Ale
+Copia-26_ALY-I #FF8C00 Ivana
+Copia-26_BRa-I #FF8C00 Ivana
+Copia-27_ALY-I #FF8C00 Ivana
+Copia-27_BRa-I #3357FF Ale
+Copia-28_ALY-I #3357FF Ale
+Copia-28_BRa-I #3357FF Ale
+Copia-29_ALY-I #7F00FF Tork
+Copia-29_BRa-I #3357FF Ale
+Copia-2_AT-I #3357FF Ale
+Copia-2_BRa-I #3357FF Ale
+Copia-2_EPa-I #7F00FF Tork
+Copia-30_ALY-I #3357FF Ale
+Copia-30_BRa-I #FF8C00 Ivana
+Copia-31_ALY-I #3357FF Ale
+Copia-31_BRa-I #7F00FF Tork
+Copia-32_ALY-I #BFFF00 Bianca
+Copia-32_BRa-I #3357FF Ale
+Copia-33_ALY-I #FF8C00 Ivana
+Copia-33_BRa-I #3357FF Ale
+Copia-34_ALY-I #3357FF Ale
+Copia-34_BRa-I #BFFF00 Bianca
+Copia-35B_ALy-I #FF8C00 Ivana
+Copia-35_ALY-I #FF8C00 Ivana
+Copia-35_AT-I #BFFF00 Bianca
+Copia-35_BRa-I #FF8C00 Ivana
+Copia-36_ALY-I #3357FF Ale
+Copia-36_BRa-I #7F00FF Tork
+Copia-37_ALY-I #3357FF Ale
+Copia-37_BRa-I #3357FF Ale
+Copia-38_ALY-I #3357FF Ale
+Copia-38_BRa-I #3357FF Ale
+Copia-39_ALY-I #3357FF Ale
+Copia-39_BRa-I #3357FF Ale
+Copia-3_ALY-I #FF8C00 Ivana
+Copia-3_AT-I #3357FF Ale
+Copia-3_BRa-I #FF8C00 Ivana
+Copia-3_EPa-I #3357FF Ale
+Copia-40_ALY-I #FF8C00 Ivana
+Copia-40_BRa-I #7F00FF Tork
+Copia-41_ALY-I #3357FF Ale
+Copia-41_BRa-I #3357FF Ale
+Copia-42_ALY-I #3357FF Ale
+Copia-42_BRa-I #3357FF Ale
+Copia-43_ALY-I #FF8C00 Ivana
+Copia-43_BRa-I #FF8C00 Ivana
+Copia-44_ALY-I #3357FF Ale
+Copia-44_BRa-I #3357FF Ale
+Copia-45_ALY-I #33FFF3 TAR
+Copia-45_BRa-I #3357FF Ale
+Copia-46_ALY-I #7F00FF Tork
+Copia-46_BRa-I #3357FF Ale
+Copia-47_ALY-I #FF8C00 Ivana
+Copia-47_BRa-I #3357FF Ale
+Copia-48_ALY-I #008BFF SIRE
+Copia-48_BRa-I #3357FF Ale
+Copia-49_ALY-I #FF8C00 Ivana
+Copia-49_BRa-I #3357FF Ale
+Copia-4_ALY-I #3357FF Ale
+Copia-4_AT-I #7F00FF Tork
+Copia-4_BRa-I #FF8C00 Ivana
+Copia-4_EPa-I #7F00FF Tork
+Copia-50_ALY-I #3357FF Ale
+Copia-50_BRa-I #FF8C00 Ivana
+Copia-51_ALY-I #FF8C00 Ivana
+Copia-51_BRa-I #3357FF Ale
+Copia-52_ALY-I #3357FF Ale
+Copia-52_BRa-I #3357FF Ale
+Copia-53_ALY-I #FF8C00 Ivana
+Copia-53_BRa-I #FF8C00 Ivana
+Copia-54_ALY-I #3357FF Ale
+Copia-54_BRa-I #3357FF Ale
+Copia-55_ALY-I #3357FF Ale
+Copia-55_BRa-I #3357FF Ale
+Copia-56_ALY-I #3357FF Ale
+Copia-56_BRa-I #3357FF Ale
+Copia-57_ALY-I #3357FF Ale
+Copia-57_BRa-I #FF8C00 Ivana
+Copia-58_ALY-I #3357FF Ale
+Copia-58_BRa-I #FF8C00 Ivana
+Copia-59_ALY-I #3357FF Ale
+Copia-59_BRa-I #FF8C00 Ivana
+Copia-5_ALY-I #3357FF Ale
+Copia-5_BRa-I #FF8C00 Ivana
+Copia-5_EPa-I #FF8C00 Ivana
+Copia-60_ALY-I #3357FF Ale
+Copia-60_BRa-I #FF8C00 Ivana
+Copia-61_ALY-I #3357FF Ale
+Copia-61_BRa-I #3357FF Ale
+Copia-62_ALY-I #FF8C00 Ivana
+Copia-62_BRa-I #3357FF Ale
+Copia-63_ALY-I #3357FF Ale
+Copia-63_BRa-I #3357FF Ale
+Copia-64_ALY-I #3357FF Ale
+Copia-64_BRa-I #3357FF Ale
+Copia-65_ALY-I #FF8C00 Ivana
+Copia-65_BRa-I #FF8C00 Ivana
+Copia-66_ALY-I #3357FF Ale
+Copia-66_BRa-I #3357FF Ale
+Copia-67_ALY-I #FF8C00 Ivana
+Copia-67_BRa-I #3357FF Ale
+Copia-68_ALY-I #FF8C00 Ivana
+Copia-68_BRa-I #FF8C00 Ivana
+Copia-69_ALY-I #FF8C00 Ivana
+Copia-69_BRa-I #3357FF Ale
+Copia-6_ALY-I #7F00FF Tork
+Copia-6_BRa-I #3357FF Ale
+Copia-6_EPa-I #7F00FF Tork
+Copia-70_ALY-I #3357FF Ale
+Copia-70_BRa-I #7F00FF Tork
+Copia-71_ALY-I #7F00FF Tork
+Copia-71_BRa-I #3357FF Ale
+Copia-72_ALY-I #3357FF Ale
+Copia-72_BRa-I #3357FF Ale
+Copia-73_ALY-I #FF8C00 Ivana
+Copia-73_BRa-I #3357FF Ale
+Copia-74_ALY-I #FF33F3 Angela
+Copia-74_BRa-I #3357FF Ale
+Copia-75_ALY-I #FF8C00 Ivana
+Copia-75_BRa-I #FF8C00 Ivana
+Copia-76_ALY-I #FF8C00 Ivana
+Copia-76_BRa-I #FF8C00 Ivana
+Copia-77_ALY-I #BFFF00 Bianca
+Copia-77_BRa-I #FF8C00 Ivana
+Copia-78_ALY-I #008BFF SIRE
+Copia-78_BRa-I #3357FF Ale
+Copia-79_ALY-I #FF8C00 Ivana
+Copia-79_BRa-I #3357FF Ale
+Copia-7_ALY-I #3357FF Ale
+Copia-7_BRa-I #BFFF00 Bianca
+Copia-7_EPa-I #7F00FF Tork
+Copia-80_ALY-I #7F00FF Tork
+Copia-80_BRa-I #FF8C00 Ivana
+Copia-81_ALY-I #3357FF Ale
+Copia-81_BRa-I #3357FF Ale
+Copia-82_ALY-I #3357FF Ale
+Copia-82_BRa-I #3357FF Ale
+Copia-83_ALY-I #008BFF SIRE
+Copia-83_BRa-I #3357FF Ale
+Copia-84_ALY-I #FF8C00 Ivana
+Copia-84_BRa-I #3357FF Ale
+Copia-85_ALY-I #7F00FF Tork
+Copia-85_BRa-I #3357FF Ale
+Copia-86_ALY-I #3357FF Ale
+Copia-86_BRa-I #3357FF Ale
+Copia-87_ALY-I #33FFF3 TAR
+Copia-87_BRa-I #FF8C00 Ivana
+Copia-88_ALY-I #3357FF Ale
+Copia-88_BRa-I #3357FF Ale
+Copia-89_ALY-I #FF8C00 Ivana
+Copia-89_BRa-I #FF8C00 Ivana
+Copia-8_ALY-I #33FFF3 TAR
+Copia-8_BRa-I #FF8C00 Ivana
+Copia-8_EPa-I #7F00FF Tork
+Copia-90_ALY-I #3357FF Ale
+Copia-90_BRa-I #7F00FF Tork
+Copia-91_ALY-I #3357FF Ale
+Copia-91_BRa-I #7F00FF Tork
+Copia-92_ALY-I #008BFF SIRE
+Copia-92_BRa-I #3357FF Ale
+Copia-93_ALY-I #3357FF Ale
+Copia-93_BRa-I #3357FF Ale
+Copia-94_ALy-I #FF8C00 Ivana
+Copia-94_BRa-I #7F00FF Tork
+Copia-95_ALy-I #FF8C00 Ivana
+Copia-95_BRa-I #3357FF Ale
+Copia-96_ALy-I #3357FF Ale
+Copia-96_BRa-I #7F00FF Tork
+Copia-97_ALy-I #BFFF00 Bianca
+Copia-97_BRa-I #FF8C00 Ivana
+Copia-98_BRa-I #3357FF Ale
+Copia-99_BRa-I #FF8C00 Ivana
+Copia-9_ALY-I #3357FF Ale
+Copia-9_BRa-I #FF8C00 Ivana
+Copia-9_EPa-I #3357FF Ale
+ENDOVIR1_I #008BFF SIRE
+META1_I #BFFF00 Bianca
+TA1-2_I #7F00FF Tork
+TERESTRA-1-Aly #2e9e75 Alesia

@@ -5,7 +5,7 @@ This repository contains the code for project Genome and Transcriptome Assembly 
 ## Data
 Two data sets were used to the genome and transcriptome assembly, PacBio HiFi reads from whole genome sequencing of *Arabidopsis thaliana* accession Edi-0, data from [Lian et al. 2024,](https://www.nature.com/articles/s41588-024-01715-9) and whole transcriptome Illumina RNA-seq data for accession Sha (RNAseq_Sha) identified as Read (_R1) and Read 2 (_R2), data from [Jiao et al. 2020](http://dx.doi.org/10.1038/s41467-020-14779-y).
 
-## Directory Structure
+## Directory structure
 
 The scripts are structured to organize and run the analysis in the following directory structure:
 
@@ -24,7 +24,7 @@ The scripts are structured to organize and run the analysis in the following dir
   - Output and error information from Slurm job submissions
 
 
-### Genome and Transcriptome Assembly
+### Genome and transcriptome assembly
 
 Use scripts 01–15 to:
 
